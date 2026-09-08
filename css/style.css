@@ -1344,3 +1344,6 @@ pre .javascript .function {
   margin-right: 5px;
   display: inline-block;
 }
+body {
+  background-color: #fffbeb;
+}
