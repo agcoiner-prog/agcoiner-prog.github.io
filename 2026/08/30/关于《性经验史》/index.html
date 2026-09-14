@@ -111,7 +111,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2026/08/30/%E5%85%B3%E4%BA%8E%E3%80%8A%E6%80%A7%E7%BB%8F%E9%AA%8C%E5%8F%B2%E3%80%8B/" data-id="cuidN7MoHIGqWSt0hfF79JmA-" data-title="关于《性经验史》" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2026/08/30/%E5%85%B3%E4%BA%8E%E3%80%8A%E6%80%A7%E7%BB%8F%E9%AA%8C%E5%8F%B2%E3%80%8B/" data-id="cuidsl1-mN3n1FQTtuWV2ljH8" data-title="关于《性经验史》" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -198,7 +198,41 @@
   </div>
 
   
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<div id="aplayer" style="margin-bottom:20px;"></div>
+<script>
+const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    listFolded: false,
+    loop: 'all',
+    audio: [
+        {
+            name: "01",
+            artist: "歌手",
+            url: "/music/01.mp3"
+        },
+        {
+            name: "02",
+            artist: "歌手",
+            url: "/music/02.mp3"
+        },
+        {
+            name: "03",
+            artist: "歌手",
+            url: "/music/03.mp3"
+        },
+        {
+            name: "04",
+            artist: "歌手",
+            url: "/music/04.mp3"
+        }
+    ]
+});
+</script>
 </aside>
+
+
         
       </div>
       <footer id="footer">

@@ -106,7 +106,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2026/09/07/%E5%A4%B1%E5%BF%86/" data-id="cuidXb_uJN25FKFVyxzHedrg8" data-title="失忆" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2026/09/07/%E5%A4%B1%E5%BF%86/" data-id="cuid4j_0-n_IzUe2f8O6E2hvN" data-title="失忆" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -151,7 +151,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2026/09/02/%E5%8C%BA%E5%9F%9F%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%AC%94%E8%AE%B0/" data-id="cuid2QnKJ3H39h1fafniCecY7" data-title="区域经济学笔记" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2026/09/02/%E5%8C%BA%E5%9F%9F%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%AC%94%E8%AE%B0/" data-id="cuidoZggI7TF-DmehJoUiWHrq" data-title="区域经济学笔记" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -192,7 +192,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2026/08/30/%E5%85%B3%E4%BA%8E%E3%80%8A%E6%80%A7%E7%BB%8F%E9%AA%8C%E5%8F%B2%E3%80%8B/" data-id="cuidN7MoHIGqWSt0hfF79JmA-" data-title="关于《性经验史》" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2026/08/30/%E5%85%B3%E4%BA%8E%E3%80%8A%E6%80%A7%E7%BB%8F%E9%AA%8C%E5%8F%B2%E3%80%8B/" data-id="cuidsl1-mN3n1FQTtuWV2ljH8" data-title="关于《性经验史》" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -209,23 +209,6 @@
 
 
 
-<div style="border:1px solid #ccc;padding:16px;border‑radius:8px;margin:20px 0;max‑width:400px;">
-  <h4>本地音频播放器</h4>
-  <audio id="myAudio" controls crossorigin="anonymous">
-    <source src="/music/01.mp3" type="audio/mpeg">
-    浏览器不支持音频
-  
-  <div style="margin‑top:8px;">
-    <button id="playBtn">播放</button>
-    <button id="pauseBtn">暂停</button>
-  </div>
-</div>
-
-<script>
-const audio = document.getElementById('myAudio');
-document.getElementById('playBtn').onclick = ()=> audio.play();
-document.getElementById('pauseBtn').onclick = ()=> audio.pause();
-</script>
 </section>
         
           <aside id="sidebar">
@@ -285,7 +268,41 @@ document.getElementById('pauseBtn').onclick = ()=> audio.pause();
   </div>
 
   
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<div id="aplayer" style="margin-bottom:20px;"></div>
+<script>
+const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    listFolded: false,
+    loop: 'all',
+    audio: [
+        {
+            name: "01",
+            artist: "歌手",
+            url: "/music/01.mp3"
+        },
+        {
+            name: "02",
+            artist: "歌手",
+            url: "/music/02.mp3"
+        },
+        {
+            name: "03",
+            artist: "歌手",
+            url: "/music/03.mp3"
+        },
+        {
+            name: "04",
+            artist: "歌手",
+            url: "/music/04.mp3"
+        }
+    ]
+});
+</script>
 </aside>
+
+
         
       </div>
       <footer id="footer">

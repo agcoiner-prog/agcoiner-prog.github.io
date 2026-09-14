@@ -209,7 +209,41 @@
   </div>
 
   
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<div id="aplayer" style="margin-bottom:20px;"></div>
+<script>
+const ap = new APlayer({
+    container: document.getElementById('aplayer'),
+    listFolded: false,
+    loop: 'all',
+    audio: [
+        {
+            name: "01",
+            artist: "歌手",
+            url: "/music/01.mp3"
+        },
+        {
+            name: "02",
+            artist: "歌手",
+            url: "/music/02.mp3"
+        },
+        {
+            name: "03",
+            artist: "歌手",
+            url: "/music/03.mp3"
+        },
+        {
+            name: "04",
+            artist: "歌手",
+            url: "/music/04.mp3"
+        }
+    ]
+});
+</script>
 </aside>
+
+
         
       </div>
       <footer id="footer">
