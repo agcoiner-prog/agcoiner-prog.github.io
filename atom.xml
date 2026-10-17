@@ -10,22 +10,22 @@
   <rights>All rights reserved 2026, John Doe</rights>
   <subtitle>welcome……</subtitle>
   <title>The Library</title>
-  <updated>2026-10-17T12:44:57.948Z</updated>
+  <updated>2026-10-17T13:07:49.153Z</updated>
   <entry>
     <author>
       <name>John Doe</name>
     </author>
     <content>
-      <![CDATA[<p><img src="/2026/10/17/try/test.jpg" alt="测试图片"></p>]]>
+      <![CDATA[<img src="/2026/10/17/try/test.jpg" class="" width="300" title="测试图片">]]>
     </content>
     <id>http://example.com/2026/10/17/try/</id>
     <link href="http://example.com/2026/10/17/try/"/>
     <published>2026-10-17T12:33:09.000Z</published>
     <summary>
-      <![CDATA[<p><img src="/2026/10/17/try/test.jpg" alt="测试图片"></p>]]>
+      <![CDATA[<img src="/2026/10/17/try/test.jpg" class="" width="300" title="测试图片">]]>
     </summary>
     <title>try</title>
-    <updated>2026-10-17T12:44:57.948Z</updated>
+    <updated>2026-10-17T13:07:49.153Z</updated>
   </entry>
   <entry>
     <author>
